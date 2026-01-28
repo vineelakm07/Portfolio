@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    /* Light mode: very soft blue so main look still calm */
+    @apply bg-gradient-to-br from-blue-50 via-slate-50 to-blue-100;
+    /* Dark mode: deep, aesthetic blue gradient */
+    @apply dark:from-slate-950 dark:via-slate-900 dark:to-slate-950;
+    @apply text-gray-900 dark:text-gray-100;
+    @apply font-sans;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-2xl shadow-lg border border-white/20 dark:border-gray-700/20;
+    transition: all 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    @apply shadow-xl;
+    transform: translateY(-2px);
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20;
+  }
+  
+  .section-title {
+    @apply text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 dark:text-gray-300 mb-12;
+  }
+  
+  .interactive-element {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .interactive-element:hover {
+    transform: translateY(-2px) scale(1.03);
+  }
+  
+  .interactive-element:active {
+    transform: translateY(0) scale(0.96);
+  }
+}
