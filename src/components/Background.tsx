@@ -29,7 +29,8 @@ const Background = () => {
       opacity: number
     }> = []
 
-    const particleCount = 50
+    // Reduced count to keep scroll smooth on all devices
+    const particleCount = 25
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,

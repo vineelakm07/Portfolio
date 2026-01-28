@@ -21,7 +21,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex justify-center md:justify-start"
+          className="flex justify-center"
         >
           <div className="relative">
             <motion.div
@@ -33,7 +33,7 @@ const Hero = () => {
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl bg-white relative z-10"
+              className="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl bg-white relative z-10"
             >
               <img
                 src="/profile.jpg"
