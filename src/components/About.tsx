@@ -117,14 +117,14 @@ const About = () => {
               <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
             </RippleButton>
             <RippleButton
-              onClick={() => window.open('https://linkedin.com/in/vineelakm', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/vineela-kandunuru-muni-062a95326', '_blank')}
               className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               whileHover={{ y: -2, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
             >
               <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300" />
             </RippleButton>
             <RippleButton
-              onClick={() => window.open('mailto:vineelakm07@gmail.com', '_blank')}
+              onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=vineelakm07@gmail.com', '_blank')}
               className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               whileHover={{ y: -2, boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
             >

@@ -21,12 +21,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Mail,
-      href: 'mailto:vineelakm07@gmail.com',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=vineelakm07@gmail.com',
       label: 'Email',
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/vineelakm',
+      href: 'https://www.linkedin.com/in/vineela-kandunuru-muni-062a95326',
       label: 'LinkedIn',
     },
     {

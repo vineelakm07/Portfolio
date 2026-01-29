@@ -12,8 +12,13 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const mailtoLink = `mailto:vineelakm07@gmail.com?subject=Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}`
-    window.location.href = mailtoLink
+    const subject = `Contact from ${formData.name}`
+    const body = `From: ${formData.name} (${formData.email})\n\n${formData.message}`
+    const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=vineelakm07@gmail.com&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`
+
+    window.open(gmailCompose, '_blank', 'noopener,noreferrer')
     setFormData({ name: '', email: '', message: '' })
   }
 
@@ -31,7 +36,7 @@ const Contact = () => {
       icon: Mail,
       label: 'Email',
       value: 'vineelakm07@gmail.com',
-      href: 'mailto:vineelakm07@gmail.com',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=vineelakm07@gmail.com',
     },
     {
       icon: Phone,
@@ -42,8 +47,8 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/vineelakm',
-      href: 'https://linkedin.com/in/vineelakm',
+      value: 'linkedin.com/in/vineela-kandunuru-muni-062a95326',
+      href: 'https://www.linkedin.com/in/vineela-kandunuru-muni-062a95326',
     },
     {
       icon: Github,
