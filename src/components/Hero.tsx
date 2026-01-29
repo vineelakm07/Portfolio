@@ -4,7 +4,7 @@ import RippleButton from './RippleButton'
 
 const Hero = () => {
   const handleDownload = () => {
-    window.open('/resume/Vineela kandunuru muni.pdf', '_blank')
+    window.open('/resume/Vineela kandunuru muni.pdf.pdf', '_blank')
   }
 
   const handleContactClick = () => {
